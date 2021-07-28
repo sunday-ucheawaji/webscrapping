@@ -7,7 +7,7 @@ import re
 def main():
 
     """ A request is made to the user whether he wants to scrape a website. He can
-        either "y" for YES or "n" for NO. The user option is subject to error handling
+        either enter "y" for YES or "n" for NO. The user option is subject to error handling
         and he is continuously prompted until the correct option is entered
      """
 
@@ -17,7 +17,7 @@ def main():
             if option.lower() == 'y' or option.lower() == 'n':
                 break
             else:
-                raise Exception('invalid option')
+                raise Exception('Invalid option')
         except Exception as err:
             print(str(err))
     if option.lower() == 'y':
@@ -32,7 +32,7 @@ def main():
             except Exception as err:
                 print(str(err))
 
-        my_scraper = Scraper(web)                       # An instance of Scraper class is made
+        my_scraper = Scraper(web)                       # An instance of Scraper class is created
         page = my_scraper.get_page()                    # The web is created and the page returned
         cleaned_up = my_scraper.clean_up(page)          # This cleans up the page
         dictionary = my_scraper.key_value(cleaned_up)   # A dictionary is created
@@ -45,7 +45,9 @@ def main():
         pie_chart = my_analyser.pie_chart()             # The Pie Chart is plotted
 
         print('Thanks for analyzing! Come back again!')
+        main()
     else:
+        print('Thanks for analyzing! Come back again!')
         exit()
 
 
