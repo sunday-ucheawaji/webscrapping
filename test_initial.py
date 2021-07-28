@@ -11,11 +11,13 @@ class TestScraper(unittest.TestCase):
     def test_get_page(self):
         page = self.scrape.get_page()
         self.assertIsInstance(page, str, 'This should return a string')
+        self.assertEqual(bool(page), True)
 
     def test_clean_up(self):
         page = self.scrape.get_page()
         clean = self.scrape.clean_up(page)
         self.assertIsInstance(clean, str, 'This should return a string')
+        self.assertEqual(bool(clean), True)
 
     def test_key_value(self):
         page = self.scrape.get_page()
