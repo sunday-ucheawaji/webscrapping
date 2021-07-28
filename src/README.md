@@ -47,11 +47,11 @@ like, as well as how it should function. For testing purposes, we’ll use Pytho
 
 ## Pie Plot
 
-![Pie Plot Analysis](assets/pie_plot.png)
+![Pie Plot Analysis](../assets/pie_plot.png)
 
 ## Bar Plot
 
-![Web Analysis](assets/bar_chart.png)
+![Web Analysis](../assets/bar_chart.png)
 
 ## Step by step Analysis
 

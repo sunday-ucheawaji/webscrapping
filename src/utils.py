@@ -1,5 +1,6 @@
-
+alphabet = list('abcdefghijklmnopqrstuvwxyz')
 common_words = [
+    'in',
     "and",
     "from",
     "it",
@@ -25,4 +26,33 @@ common_words = [
     "new" "with",
     "this",
     "that",
+    "while",
+    'is',
+    'not',
+    'will',
+    'be',
+    'please',
+    'turn',
+    'on',
+    'to',
+    'close',
+    'go',
+    'a',
+    'smaller',
+    'larger',
+    'about',
+    'all'
+    'x',
+    'other',
+    'of',
+    'get',
+    'an',
+    'up',
+    'n',
+    '0',
+    '1',
+    '2',
+    '3',
+
 ]
+check = [common_words.append(i) for i in alphabet]
