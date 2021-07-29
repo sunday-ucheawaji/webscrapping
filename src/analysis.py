@@ -12,7 +12,7 @@ class PieBarChart:
         """This function is responsible for plotting the Bar Chart"""
         plt.xlabel('words')
         plt.ylabel('frequency of words')
-        plt.title('Words in python.org')
+        plt.title(f'Words in python.org')
         plt.xticks(fontsize=10)
         plt.bar(self.words, self.frequency, width=0.8)
         return plt.show()
@@ -30,7 +30,7 @@ class PieBarChart:
     def top_word(self, dic):
         """This function is responsible for returning the most common 10 words """
         highest_word = max(dic.items(), key=operator.itemgetter(1))[0]
-        print(f"The top word is: {highest_word}")
+        print(f'The top word is: {highest_word}')
         return highest_word
 
 

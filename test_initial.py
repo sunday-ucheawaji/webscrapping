@@ -1,6 +1,7 @@
 import unittest
 from src.analysis import PieBarChart
 from src.scraper import Scraper
+from main import main
 
 
 class TestScraper(unittest.TestCase):
@@ -56,37 +57,3 @@ class TestPieBarChart(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
